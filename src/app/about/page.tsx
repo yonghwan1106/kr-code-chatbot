@@ -1,8 +1,10 @@
 import React from 'react';
+import Navbar from '@/components/layout/Navbar';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+      <Navbar />
       <div className="max-w-6xl mx-auto px-4 py-8">
 
         {/* 헤더 섹션 */}

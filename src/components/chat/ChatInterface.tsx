@@ -85,7 +85,7 @@ export default function ChatInterface() {
   };
 
   return (
-    <div className="flex flex-col h-full max-w-6xl mx-auto bg-white rounded-xl shadow-sm border mx-4 my-4 min-h-[calc(100vh-6rem)]">
+    <div className="flex flex-col h-full max-w-6xl mx-auto bg-white rounded-xl shadow-sm border mx-4 my-4">
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-6 rounded-t-xl">
         <div className="flex items-center space-x-3">

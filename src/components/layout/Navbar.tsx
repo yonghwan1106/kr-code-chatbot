@@ -10,6 +10,7 @@ export default function Navbar() {
     { href: '/', label: '홈', icon: '🏠' },
     { href: '/chat', label: '챗봇', icon: '💬' },
     { href: '/search', label: '검색', icon: '🔍' },
+    { href: '/about', label: '소개', icon: '📋' },
   ];
 
   return (

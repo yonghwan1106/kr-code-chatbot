@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import Navbar from '@/components/layout/Navbar';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <Navbar />
       <div className="max-w-6xl mx-auto px-4 py-16">
         {/* 히어로 섹션 */}
         <div className="text-center mb-16">
