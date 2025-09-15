@@ -35,15 +35,21 @@ class DatabaseManager {
   }
 
   private initDatabase() {
-    const dbPath = path.join(process.cwd(), 'src/data/kr-code.db');
+    // Vercel 환경에서는 읽기 전용 파일 시스템이므로 메모리 DB 사용
+    if (process.env.VERCEL) {
+      this.db = new Database(':memory:');
+    } else {
+      const dbPath = path.join(process.cwd(), 'src/data/kr-code.db');
 
-    // 데이터베이스 디렉토리가 없으면 생성
-    const dbDir = path.dirname(dbPath);
-    if (!fs.existsSync(dbDir)) {
-      fs.mkdirSync(dbDir, { recursive: true });
+      // 데이터베이스 디렉토리가 없으면 생성
+      const dbDir = path.dirname(dbPath);
+      if (!fs.existsSync(dbDir)) {
+        fs.mkdirSync(dbDir, { recursive: true });
+      }
+
+      this.db = new Database(dbPath);
     }
 
-    this.db = new Database(dbPath);
     this.createTables();
     this.seedData();
   }
