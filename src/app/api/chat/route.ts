@@ -71,21 +71,36 @@ export async function POST(request: NextRequest) {
     console.error('Chat API Error:', error);
 
     let errorMessage = '서버 오류가 발생했습니다. 관리자에게 문의해주세요.';
+    let statusCode = 500;
 
     if (error instanceof Error) {
-      if (error.message.includes('API') || error.message.includes('401')) {
+      console.error('Error details:', {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      });
+
+      if (error.message.includes('401') || error.message.includes('authentication')) {
         errorMessage = 'AI 서비스 인증에 문제가 있습니다. API 키를 확인해주세요.';
+        statusCode = 401;
+      } else if (error.message.includes('429') || error.message.includes('rate limit')) {
+        errorMessage = 'API 요청 한도를 초과했습니다. 잠시 후 다시 시도해주세요.';
+        statusCode = 429;
       } else if (error.message.includes('network') || error.message.includes('fetch')) {
         errorMessage = 'AI 서비스에 일시적인 문제가 발생했습니다. 잠시 후 다시 시도해주세요.';
+        statusCode = 503;
       }
     }
 
     return NextResponse.json(
       {
         error: errorMessage,
-        details: process.env.NODE_ENV === 'development' && error instanceof Error ? error.message : undefined
+        details: process.env.NODE_ENV === 'development' && error instanceof Error ? {
+          message: error.message,
+          name: error.name
+        } : undefined
       },
-      { status: 500 }
+      { status: statusCode }
     );
   }
 }
