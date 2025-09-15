@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:kr-code-chatbot.vercel.app)",
+      "Read(//d/0928 국민참여 철도규제 개선제안 공모/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
