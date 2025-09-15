@@ -86,16 +86,16 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-6">이런 질문을 해보세요</h2>
           <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             <div className="bg-white rounded-lg p-4 shadow border-l-4 border-blue-500">
-              "250km/h 고속철도 최소곡선반지름은?"
+              &quot;250km/h 고속철도 최소곡선반지름은?&quot;
             </div>
             <div className="bg-white rounded-lg p-4 shadow border-l-4 border-green-500">
-              "복선터널 최소단면 기준이 궁금해요"
+              &quot;복선터널 최소단면 기준이 궁금해요&quot;
             </div>
             <div className="bg-white rounded-lg p-4 shadow border-l-4 border-purple-500">
-              "전차선과 구조물 절연거리는?"
+              &quot;전차선과 구조물 절연거리는?&quot;
             </div>
             <div className="bg-white rounded-lg p-4 shadow border-l-4 border-red-500">
-              "차량한계와 건축한계 차이점"
+              &quot;차량한계와 건축한계 차이점&quot;
             </div>
           </div>
         </div>

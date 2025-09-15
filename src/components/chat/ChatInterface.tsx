@@ -63,7 +63,7 @@ export default function ChatInterface() {
       };
 
       setMessages(prev => [...prev, botMessage]);
-    } catch (error) {
+    } catch {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         content: '죄송합니다. 오류가 발생했습니다. 다시 시도해주세요.',

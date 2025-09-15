@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import SearchBox from '@/components/search/SearchBox';
 import SearchResults from '@/components/search/SearchResults';
 import Navbar from '@/components/layout/Navbar';

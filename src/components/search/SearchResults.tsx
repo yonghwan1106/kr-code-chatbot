@@ -74,16 +74,16 @@ export default function SearchResults({ results, query, isLoading }: SearchResul
           <h4 className="font-semibold text-gray-800 mb-3">💡 검색 팁</h4>
           <div className="grid md:grid-cols-2 gap-3 text-sm">
             <div className="bg-white p-3 rounded-lg">
-              <span className="font-medium text-blue-600">구체적 키워드:</span> "곡선반지름", "터널단면"
+              <span className="font-medium text-blue-600">구체적 키워드:</span> &quot;곡선반지름&quot;, &quot;터널단면&quot;
             </div>
             <div className="bg-white p-3 rounded-lg">
-              <span className="font-medium text-green-600">조합 검색:</span> "고속철도 곡선"
+              <span className="font-medium text-green-600">조합 검색:</span> &quot;고속철도 곡선&quot;
             </div>
             <div className="bg-white p-3 rounded-lg">
-              <span className="font-medium text-purple-600">분야별:</span> "노반", "전기", "신호"
+              <span className="font-medium text-purple-600">분야별:</span> &quot;노반&quot;, &quot;전기&quot;, &quot;신호&quot;
             </div>
             <div className="bg-white p-3 rounded-lg">
-              <span className="font-medium text-orange-600">수치 포함:</span> "250km/h", "2500m"
+              <span className="font-medium text-orange-600">수치 포함:</span> &quot;250km/h&quot;, &quot;2500m&quot;
             </div>
           </div>
         </div>
