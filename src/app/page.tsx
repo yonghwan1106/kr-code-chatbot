@@ -42,7 +42,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">AI 자연어 검색</h3>
             <p className="text-gray-600">
-              "250km/h 고속철도 최소곡선반지름은?" 등 자연스러운 질문으로 즉시 정확한 답변을 받아보세요.
+              &quot;250km/h 고속철도 최소곡선반지름은?&quot; 등 자연스러운 질문으로 즉시 정확한 답변을 받아보세요.
             </p>
           </div>
           <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
@@ -123,19 +123,19 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <span className="text-blue-600 mr-2">💬</span>
-              "250km/h 고속철도 최소곡선반지름은?"
+              &quot;250km/h 고속철도 최소곡선반지름은?&quot;
             </div>
             <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
               <span className="text-green-600 mr-2">💬</span>
-              "복선터널 최소단면 기준이 궁금해요"
+              &quot;복선터널 최소단면 기준이 궁금해요&quot;
             </div>
             <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
               <span className="text-purple-600 mr-2">💬</span>
-              "전차선과 구조물 절연거리는?"
+              &quot;전차선과 구조물 절연거리는?&quot;
             </div>
             <div className="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-500">
               <span className="text-indigo-600 mr-2">💬</span>
-              "차량한계와 건축한계 차이점"
+              &quot;차량한계와 건축한계 차이점&quot;
             </div>
           </div>
         </div>

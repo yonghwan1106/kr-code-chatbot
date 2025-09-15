@@ -75,7 +75,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">자연어 질의응답</h3>
               <p className="text-gray-600 text-sm">
-                "250km/h 고속철도 최소곡선반지름은?" 등 자연스러운 질문으로 즉시 답변 제공
+                &quot;250km/h 고속철도 최소곡선반지름은?&quot; 등 자연스러운 질문으로 즉시 답변 제공
               </p>
             </div>
             <div className="bg-green-50 rounded-lg p-6">
