@@ -93,9 +93,12 @@ export default function ChatInterface() {
             <span className="text-2xl">🤖</span>
           </div>
           <div>
-            <h2 className="text-xl font-semibold">KR-CODE AI 어시스턴트</h2>
+            <h2 className="text-xl font-semibold">철도건설규정 통합검색 챗봇</h2>
             <p className="text-blue-100 text-sm">
               철도건설규정 전문가가 도와드립니다
+            </p>
+            <p className="text-blue-200 text-xs mt-1 opacity-80">
+              국민참여 철도규제 개선제안 공모전 출품작
             </p>
           </div>
         </div>
